@@ -7,11 +7,11 @@ Sams et al. 2016 is currently on biorxiv at http://biorxiv.org/content/early/201
 
 This package includes two main programs in the /scripts directory.
 
-1. nea_gravel_freq_sims.py - This program generates the distributions of derived
+1. nea_freq_sims.py - This program generates the distributions of derived
                                     allele counts at Neandertal-Like-Sites described
                                     in Sams et al. 2016.
 
-2. nea_gravel_haps_sims.py - This program generates the distributions of the H(D/A)
+2. nea_haps_sims.py - This program generates the distributions of the H(D/A)
                                     statistic at Neandertal-Like-Sites described
                                     in Sams et al. 2016.
 
@@ -20,11 +20,14 @@ This package includes two main programs in the /scripts directory.
 The options for each program can be accessed with the `-h` flag:
 
 ```
-./nea_gravel_freq_sims.py -h
+./nea_freq_sims.py -h
 ```
 
 Most options should be straightforward to interpret, but please contact Aaron Sams
     with any issues or questions.
+
+The options allow the user to specify various aspects of the model, though the default
+    parameters specify the base models used in Sams et al. 2016.
 
 ## Example use
 
@@ -41,13 +44,13 @@ To generate a set of 1000 Neandertal-Like-Site derived allele counts for Europea
     only the index values of the results.
 
 ```
-./nea_gravel_freq_sims.py 1 1000
+./nea_freq_sims.py 1 1000
 ```
 
-Note that nea_gravel_freq_sims.py will by default write two output files to stderr and
+Note that nea_freq_sims.py will by default write two output files to stderr and
     stdout.
 
-In contrast, nea_gravel_haps_sims.py requires the user to specify an output file prefix
+In contrast, nea_haps_sims.py requires the user to specify an output file prefix
     with the `--outtag` flag.
 
 ## Supporting files
@@ -85,6 +88,9 @@ From the [**macs**](https://github.com/gchen98/macs) software package (Chen et a
 
 Finally (5) **H-scan** (Messer), which can be downloaded from:
     https://messerlab.org/resources/
+
+nea_freq_sims.py requires (ms)
+nea_haps_sims.py requires (macs, msformatter, sample_stats, and H-scan)
 
 Additionally, the haplotype simulator relies on **numpy** (http://www.numpy.org),
     so your python distribution must have it installed as well.
