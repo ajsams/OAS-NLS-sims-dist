@@ -25,8 +25,8 @@ from numpy.random import binomial
 
 phelp='''
 
-    Simulation of Neandertal-like-site Haplotype length scores under gravel model
-        with Neandertal admixture.
+    Simulation of Neandertal-like-site Haplotype length scores under
+        neutral coalescent model with Neandertal admixture.
 
         filename: xFNAMEx
         author: Aaron J. Sams

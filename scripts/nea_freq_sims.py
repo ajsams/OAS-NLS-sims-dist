@@ -19,8 +19,8 @@ from subprocess import Popen, PIPE
 phelp='''
 
 
-    Simulation of Neandertal-like-site frequencies under gravel model
-        with Neandertal admixture.
+    Simulation of Neandertal-like-site frequencies under neutral
+        coalescent model with Neandertal admixture.
 
         filename: xFNAMEx
         author: Aaron J. Sams
