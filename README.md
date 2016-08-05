@@ -1,5 +1,5 @@
 # OAS-NLS-sims-dist
-Code used in Sams et al. 2016 to generate distributions of Neandertal-like-sites in
+Code used in Sams et al. 2016 to generate distributions of Neandertal-like-sites
     under a neutral coalescent model with Neandertal introgression. It can be used
     on linux/unix platforms.
 
